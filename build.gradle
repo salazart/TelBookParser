@@ -1,0 +1,29 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+sourceSets {
+	main.java.srcDir "src/main/java"
+	main.resources.srcDir "src/main/resources"
+}
+
+repositories {
+	mavenCentral()
+	flatDir {
+		dirs "src/main/resources/libs"
+	}
+}
+
+dependencies {
+	compile name: "commons-lang3-3.3.2"
+	compile name: "log4j-api-2.1"
+	compile name: "dom4j-1.6.1"
+	compile name: "JAXP_160"
+	compile name: "log4j-1.2-api-2.1"
+	compile name: "log4j-core-2.1"
+	compile name: "poi-3.10.1-20140818"
+	compile name: "poi-ooxml-3.10.1-20140818"
+	compile name: "poi-ooxml-schemas-3.10.1-20140818"
+	compile name: "postgresql-9.3-1102.jdbc41"
+	compile name: "xmlbeans-2.6.0"
+	compile name: "xstream-1.4.7"
+}

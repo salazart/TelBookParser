@@ -1,0 +1,16 @@
+.classpath
+.project
+TelBookParser.log
+
+# Package Files #
+
+*.vcf
+*.xls
+*.xlsx
+*.xlsx1
+log.txt
+
+# Work directory #
+/bin/
+/finished_tel/
+TelBookParser.jar
